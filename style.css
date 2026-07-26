@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    padding: 60px;
-    width: 1040px;
+    padding: 60px 0px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -105,6 +105,7 @@ header {
     background-repeat: no-repeat;
     background-position: bottom;
     border-radius: 50%;
+    width: fit-content;
     padding: 5px 20px;
 }
 
@@ -127,6 +128,10 @@ header {
     animation: moveContent 5s linear infinite;
 }
 
+.dashboard:hover .dashboard-content {
+    animation-play-state: paused;
+}
+
 @keyframes moveContent {
     from {
         transform: translateX(0);
@@ -136,71 +141,133 @@ header {
     }
 }
 
-.experince {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+section {
+    padding: 60px 0px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.stars {
+.about-me {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 3px;
-    width: 32px;
-    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
-.p2{
+.about-me-content * {
+    justify-items: end;
+}
+
+.page2 {
+    width: 100%;
+    background: linear-gradient(#FFB147, #FF6C63, #B86ADF);
+}
+
+.experience {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p2 {
     opacity: 100%;
     font-style: italic;
     padding: 0;
 }
 
-.p3{
+.p3 {
     font-size: 16px;
     opacity: 100%;
-    
 }
+
 .main{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
     gap: 30px;
-    
+}
 
-
-}
-.page2{
-    padding: 60px;
-    width: 1040px;
-    margin: 0 auto;
-}
-.page3{padding: 60px;
-    width: 1040px;
-    margin: 0 auto;
-    
-}
-.about-me{
-    padding: 60px;
-    width: 1040px;
-    margin: 0 auto;
-    display: flex;
-     flex-direction: row;
-    align-items: center;
-    justify-content: space-between; padding-top:400px;
-
-}
 .head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .years{
     padding: 15px;
     margin-bottom: 4px;
-    border-bottom: 1px solid white 30%;
+    border-bottom: 1px solid white 30%;}
+    
+footer .Reach-out{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+footer .Reach-out h4{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+footer .Reach-out h1{
+    font-size: 58px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer section > div > div:nth-child(2){
+    background-color: #342A25;
+    padding: 70px;
+}
+
+footer section > div > div:nth-child(2) h1{
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+footer input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.35);
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+footer input::placeholder{
+    color: rgba(255,255,255,.7);
+}
+
+footer .input-box{
+    margin-bottom: 50px;
+}
+
+footer textarea{
+    width: 100%;
+    height: 160px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.35);
+    outline: none;
+    resize: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    padding-top: 15px;
+}
+
+footer textarea::placeholder{
+    color: rgba(255,255,255,.7);
+}
+
+footer .download-cv-btn{
+    padding: 18px 40px;
+    font-size: 20px;
 }
