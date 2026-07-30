@@ -9,7 +9,6 @@ body {
   font-family: "Rubik", sans-serif;
   color: white;
   background-color: #1E1E1E;
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -59,6 +58,7 @@ header {
 .banner {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 40px 0px;
 }
@@ -75,31 +75,6 @@ header {
     padding: 12px 0px 24px 0px;
 }
 
-.portfollio{
-    color: white;
-    background-color: #FD6F00;
-    font-size: 25px;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 30px;
-    
-}
-
-.hire-me {
-    font-size: 25px;
-    color: white;
-    background-color: black;
-    border: none;
-}
-.banner-btn{
-    border: 2px solid transparent;
-    border-radius: 50px;
-    background: linear-gradient(black, black) padding-box,
-    linear-gradient(45deg, #FFFFFF, #C9C9C9) border-box;
-    width: fit-content;
-    padding: 5px;
-}
-
 .design {
     display: flex;
     flex-direction: row;
@@ -111,6 +86,44 @@ header {
     font-size: 24px;
     font-weight: 100;
     text-transform: uppercase;
+}
+
+.banner-btn{
+    border: 3px solid rgb(182, 179, 179);
+    border-radius: 50px;
+    /* background: linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)) padding-box, */
+    /* linear-gradient(45deg, #FFFFFF, #C9C9C9) border-box; */
+    background-color: rgb(255 255 255 / 10%);
+    width: fit-content;
+    padding: 10px;
+    margin: 30px 0px;
+}
+
+.portfollio{
+    color: white;
+    background-color: #FD6F00;
+    font-size: 25px;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+.hire-me {
+    font-size: 25px;
+    color: white;
+    background-color: rgb(255 255 255 / 0%);
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    opacity: 50%;
+    font-size: 32px;
 }
 
 .picture{
@@ -125,7 +138,7 @@ header {
 .dashboard {
     font-size: 30px;
     font-weight: 100;
-    margin: -160px 0;
+    margin: -188px 0;
     transform: rotate(-5deg);
     background-color: black;
     padding: 40px 0px;
@@ -164,6 +177,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 300px;
 }
 
 .about-me-content * {
@@ -230,7 +244,6 @@ section {
 }
 
 /* Awards Section */
-.awards {}
 
 .award-head {
     display: flex;
@@ -472,7 +485,6 @@ section {
 /* My Portfolio section */
 footer {
     background-color: #000000;
-    width: 1440px;
     margin: 0 auto;
     padding-top: 120px;
     display: flex;
